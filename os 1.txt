@@ -1,0 +1,60 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+void tosAPP() {
+    cout << "/game🎮\n";
+    cout << "/info📖\n";
+    cout << "/ideas💭\n";
+}
+
+void tosW() {
+    cout << "Welcome to the operating system🦖\n";
+    cout << "--------------------------------\n";
+    cout << "this is tos1 / terminal operating system 1\n";
+    cout << "please be nice!\n";
+    cout << "/start🥇\n";
+}
+
+int main() {
+    string tos;
+    tosW();
+
+    cin >> tos;
+
+    if (tos == "/start") {
+        cout << "welcome here are the apps🍎\n";
+        tosAPP();
+    }
+
+    while (true) {
+        cin >> tos;
+
+        if (tos == "/game") {
+            cout << "whats 1+1\n";
+            cin >> tos;
+
+            if (tos == "2") {
+                cout << "correct\n";
+            }
+            else {
+                cout << "wrong\n";
+            }
+        }
+        else if (tos == "/info") {
+            cout << "------\n";
+            cout << "this is a os terminal🦖\n";
+            cout << "not a real os\n";
+        }
+        else if (tos == "/ideas") {
+            cout << "give me ideas\n";
+            cout << "they will be auto sent🙈\n";
+        }
+    }
+else  if (tos == "/code") {
+cout << "practice coding here\n";
+cin >> tos;
+}
+
+    return 0;
+}
