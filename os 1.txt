@@ -1,5 +1,7 @@
 #include <iostream>
+#include <cstdlib>
 #include <string>
+#include <ctime>
 using namespace std;
 
 void tosAPP() {
@@ -20,6 +22,7 @@ void tosW() {
 }
 
 int main() {
+    srand(time(0));
     string tos;
     tosW();
 
@@ -62,15 +65,17 @@ int main() {
             cin >> tos;
         }
         else if (tos == "/guess") {
-            cout << "guess the number between 1 -20\n";
-            cout << "its a middle number\n";
-            cin >> tos;
+            int answer = rand() % 20 + 1;
+            int guess;
 
-            if (tos == "5") {
-                cout << "correct\n";
+            cout << "guess the number 1 - 20\n";
+            cin >> guess;
+
+            if (guess == answer) {
+                cout << "correct🎊\n";
             }
             else {
-                cout << "wrong\n";
+                cout << "wrong❌\n";
             }
         }
     }
