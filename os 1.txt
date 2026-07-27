@@ -7,6 +7,8 @@ void tosAPP() {
     cout << "/info📖\n";
     cout << "/ideas💭\n";
     cout << "/code💻\n";
+    cout << "/notes📝\n";
+    cout << "/guess🎲\n";
 }
 
 void tosW() {
@@ -37,7 +39,8 @@ int main() {
 
             if (tos == "2") {
                 cout << "correct\n";
-            } else {
+            }
+            else {
                 cout << "wrong\n";
             }
         }
@@ -53,6 +56,22 @@ int main() {
         else if (tos == "/code") {
             cout << "practice coding here🌴\n";
             cin >> tos;
+        }
+        else if (tos == "/notes") {
+            cout << "write notes they leave after haha🤣\n";
+            cin >> tos;
+        }
+        else if (tos == "/guess") {
+            cout << "guess the number between 1 -20\n";
+            cout << "its a middle number\n";
+            cin >> tos;
+
+            if (tos == "5") {
+                cout << "correct\n";
+            }
+            else {
+                cout << "wrong\n";
+            }
         }
     }
 
