@@ -11,6 +11,7 @@ void tosAPP() {
     cout << "/code💻\n";
     cout << "/notes📝\n";
     cout << "/guess🎲\n";
+    cout << "/color🎨\n";
 }
 
 void tosW() {
@@ -78,6 +79,42 @@ int main() {
             else {
                 cout << "wrong❌\n";
             }
+        }
+        else if (tos == "/color") {
+            cout << "Hello whats your fav color🎨\n";
+            cout << "-----------------------------\n";
+            cout << "1. red\n";
+            cout << "2. blue\n";
+            cout << "3. green\n";
+            cout << "4. white\n";
+            cout << "5. black\n";
+            cout << "6. other color🎨\n";
+
+            int color;
+            
+
+            cin >> color;
+
+            if (color == 1) {
+                cout << "you like red nice!🐻\n";
+            }
+            else if (color == 2) {
+                cout << "nice you like blue🚗\n";
+            }
+            else if (color == 3) {
+                cout << "You like green!! 🌴\n";
+            }
+            else if (color == 4) {
+                cout << "you like white nice !!!! 🐻‍❄️\n";
+            }
+            else if (color == 5) {
+                cout << "you like black nice !! ! ⬛\n";
+            }
+            else if (color == 6) {
+                cout << "you like a aiffernt color NICEEEE!!! !🎨\n";
+            }
+
+
         }
     }
 
