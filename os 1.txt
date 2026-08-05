@@ -39,10 +39,16 @@ int main() {
         cin >> tos;
 
         if (tos == "/game") {
-            cout << "whats 1+1\n";
+            cout << "------------------------------\n";
+            cout << "game started\n";
+            cout << "whats the yellow pokemon\n";
+            cout << "HINT🤓: its well known\n";
             cin >> tos;
 
-            if (tos == "2") {
+            if (tos == "pickachu") {
+                cout << "correct\n";
+            }
+            if (tos == "Pichachu") {
                 cout << "correct\n";
             }
             else {
@@ -55,8 +61,8 @@ int main() {
             cout << "not a real os\n";
         }
         else if (tos == "/ideas") {
-            cout << "give me ideas\n";
-            cout << "they will be auto sent🙈\n";
+            cout << "write random ideas\n";
+            cin >> tos;
         }
         else if (tos == "/code") {
             cout << "practice coding here🌴\n";
@@ -111,7 +117,7 @@ int main() {
                 cout << "you like black nice !! ! ⬛\n";
             }
             else if (color == 6) {
-                cout << "you like a aiffernt color NICEEEE!!! !🎨\n";
+                cout << "you like a a differnt color NICEEEE!!! !🎨\n";
             }
 
 
